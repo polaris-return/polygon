@@ -1,0 +1,22 @@
+const duobiangxing=function(bianc=100,bians=3){
+    var x=bianc
+    var y=bians
+    var z=180-(y-2)*180/y
+    var i=0
+    while(i<y){
+        forward(x)
+        right(z)
+        i=i+1
+    }
+}
+const duoge=function(geshu=10,zongc=200,bians=3){
+    var a=geshu
+    var b=zongc
+    var d=bians
+    var c=0
+    while(c<b){
+        c=c+b/a
+        duobiangxing(c,d)
+    }
+}
+duoge(12,100,6)
